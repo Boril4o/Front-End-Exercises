@@ -9,7 +9,7 @@ export function Notification({imgUrl, message, time, text, isNew}) {
             <section className='notification-content'>
                 {message}
                 <span className='Grayish-blue-text time'>{time}</span>
-                
+                <p className={text ? 'text' : 'hide'}>{text}</p>
             </section>
         </section>
     )

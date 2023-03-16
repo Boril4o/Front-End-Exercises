@@ -2,14 +2,13 @@
     --Light-grayish-blue-1: hsl(211, 68%, 94%);
     --Very-dark-blue: hsl(224, 21%, 14%);
     --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Grayish-blue: hsl(219, 14%, 63%);
     --Red: hsl(1, 90%, 64%);
     --Blue: hsl(219, 85%, 26%);
 }
 
 .new-notification {
     background-color: var(--Light-grayish-blue-1);
-    border-radius: 10px;
-    padding: 15px;
 }
 
 .notification-container {
@@ -17,6 +16,8 @@
     justify-content:space-between;
     gap: 20px;
     margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 15px;
 }
 
 .user-pic {
@@ -26,7 +27,7 @@
 }
 
 .notification-container .notification-content .message{
-    font-size: 25px;
+    font-size: 23px;
     margin: 0px 0px 10px 0px
 }
 
@@ -37,6 +38,11 @@
 .username {
     color: var(--Very-dark-blue);
     font-weight: bold;
+}
+
+.username:hover{
+    color: var(--Blue);
+    cursor: pointer;
 }
 
 .Dark-grayish-blue {
@@ -64,4 +70,27 @@
 .blue-text {
     color: var(--Blue);
     font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+.text {
+    border: 1px solid var(--Grayish-blue);
+    color: var(--Dark-grayish-blue);
+    padding: 20px 15px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.text:hover {
+    background-color: var(--Light-grayish-blue-1);
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.Hover:hover {
+    cursor: pointer;
+    color: var(--Blue);
 }
